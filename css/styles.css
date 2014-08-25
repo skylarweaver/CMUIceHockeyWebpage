@@ -1,0 +1,611 @@
+html{
+    margin: 0px;
+    padding: 0px;
+    min-width: 1330px;
+    min-height: 650px;
+}
+
+@font-face { 
+    font-family: 'UnitedSansCdHv'; 
+    src: url('../fonts/United Sans Condensed Heavy.otf'); 
+} 
+
+@font-face { 
+    font-family: 'UnitedSansRgMd'; 
+    src: url('../fonts/United Sans Regular Medium.otf'); 
+} 
+     
+html,body{ 
+    font-family: 'UnitedSansRgMd';    
+    width:100%;     
+    height:100%;  
+    padding: 0;
+}
+
+.navigation {   
+    position:fixed; 
+    font-size: 20px;
+    float: right;    
+    z-index:1;      
+    top:18px;  
+    right: 10px;
+    text-align: -webkit-right;
+    /*text-align: right;*/
+    font-family: 'UnitedSansCdHv';
+
+
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -moz-animation: fadein 2s; /* Firefox */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+     -o-animation: fadein 2s; /* Opera */
+        animation: fadein 2s;  
+
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s
+    -ms-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s; 
+
+}  
+.navigation li {    
+    color:#333333;      
+    display:block;      
+    padding: 0 10px;    
+    line-height:30px;   
+    margin-bottom:2px;      
+    /*font-weight:bold;   */
+    -webkit-transition: all .2s ease-in-out;    
+    -moz-transition: all .2s ease-in-out;    
+    -ms-transition: all .2s ease-in-out;    
+    -o-transition: all .2s ease-in-out;    
+    transition: all .2s ease-in-out;
+    /*border-bottom:1px solid black;      */
+    text-align:right;  
+    text-align: -moz-right;
+    width:80px;
+    margin-left: 10px;  
+}  
+.navigation > li:hover,.active {   
+    font-size:20px;    
+    cursor:pointer;     
+    width:80px!important;
+    margin-left: 8px;
+    font-weight: bold;
+    text-align:right;  
+    text-align: -moz-right;
+}
+/*.envatologo {  
+    position:fixed;  
+    top:50%;  
+    left:50%;  
+    width:446px;  
+    margin-top:-41px;  
+    margin-left:-223px;  
+    z-index:1;  
+}*/
+
+
+
+.slide {
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+    position: relative;
+    box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+}
+.wrapper {
+    width:960px;
+    height:200px;
+    margin:0 auto;
+    position:relative;
+}
+.slideno {
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    font-size:100px;
+    font-weight:bold;
+    color:rgba(255,255,255,0.3);
+}
+
+.button{
+    /*display:block;*/
+    display:inline-block;
+    width:50px;
+    height:50px;
+    position:absolute;
+    bottom:0px;
+    left:48%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#333333;
+    background-image:url(../images/arrow.png);
+    background-repeat:no-repeat;
+
+}
+
+
+.button:hover{
+    background-color:#494949;
+    cursor:pointer;
+}
+
+#slide1{
+    background-color:#c60a2b;
+    text-align: center;
+
+
+    -webkit-animation: backFadein 0.4s; /* Safari and Chrome */
+    -moz-animation: backFadein 0.4s; /* Firefox */
+    -ms-animation: backFadein 0.4s; /* Internet Explorer */
+    -o-animation: backFadein 0.4s; /* Opera */ 
+    animation: backFadein 0.4s;  
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    -ms-animation-fill-mode:forwards;
+    -o-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+
+@keyframes backFadein {
+    0% { background-color: white; }
+    100%   { background-color: #c60a2b; }
+}
+
+/* Firefox */
+@-moz-keyframes backFadein {
+    0% { background-color: white; }
+    100%   { background-color: #c60a2b; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes backFadein {
+    0% { background-color: white; }
+    100%   { background-color: #c60a2b; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes backFadein {
+    0% { background-color: white; }
+    100%   { background-color: #c60a2b; }
+}​
+
+/* Opera */
+@-o-keyframes backFadein {
+    0% { background-color: white; }
+    100%   { background-color: #c60a2b; }
+}​
+
+.wrapper {
+
+}
+
+
+#tartan{
+    margin-top: -80px;
+    /*width: 43%;*/
+    height: 130%;
+    margin-bottom: -2%; 
+
+    -webkit-animation: shrink 1.7s, fadein 1.7s; /* Safari and Chrome */
+   -moz-animation: shrink 1.7s, fadein 1.7s; /* Firefox */
+    -ms-animation: shrink 1.7s,fadein 1.7s; /* Internet Explorer */
+     -o-animation: shrink 1.7s, fadein 1.7s; /* Opera */
+        animation: shrink 1.7s, fadein 1.7s;  
+
+    -webkit-animation-delay:.5s;
+    -moz-animation-delay:.5s
+    -ms-animation-delay:.5s;
+    -o-animation-delay:.5s;
+    animation-delay:.5s;
+
+/*    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in; 
+    -ms-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function:  ease-in;*/
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    -ms-animation-fill-mode:forwards;
+    -o-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes shrink {
+  0%   { height: 130%; }
+  100% { height: 100%;
+    margin-top: -40px; }
+}
+@-moz-keyframes shrink {
+  0%   { height: 130%; }
+  100% { height: 100%;
+    margin-top: -40px; }
+}
+@-o-keyframes shrink {
+  0%   { height: 130%; }
+  100% { height: 100%;
+    margin-top: -40px; }
+}
+@keyframes shrink {
+  0%   { height: 130%; }
+  100% { height: 100%;
+    margin-top: -40px; }
+}
+
+#slide1 h1{
+    font-size: 6.5em;
+    color: white;
+    font-family: 'UnitedSansCdHv';
+    opacity:0;
+
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+   -moz-animation: fadein 2s; /* Firefox */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+     -o-animation: fadein 2s; /* Opera */
+        animation: fadein 2s;   
+
+    -webkit-animation-delay:1.5s;
+    -moz-animation-delay:1.5s
+    -ms-animation-delay:1.5s;
+    -o-animation-delay:1.5s;
+    animation-delay:1.5s;
+
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    -ms-animation-fill-mode:forwards;
+    -o-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+
+
+#slide1 img{
+    display: inline;
+}
+
+#bottomTitle{
+    /*margin-top: 5%;*/
+    position: relative;
+    margin-top: -10%;
+    font-family: 'UnitedSansCdHv', sans-serif;
+}
+
+#teamPic{
+    width: 61%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -2%;
+    border-radius: 0.5em;
+}
+
+#aboutText{
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    margin-top: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    width: 82%;
+}
+
+#beginText{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+p{
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.slide h2{
+    padding-top: .65em;
+    font-size: 4.5em;
+    text-align: center;
+}
+
+#slide3 #players{
+    /*text-align: center;*/
+    margin-top:-2.5em;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+#slide3 #players img{
+    width: 100%;
+    border-width: 4px;
+    /*border-style: groove;*/
+    /*border-color: black;*/
+}
+
+#slide3 #players img:hover{
+    border-color: red;
+    /*opacity: 100%;*/
+}
+
+#slide3 .player{
+    display: inline-block;
+    margin: 0.4em;
+    position: relative;
+    width: 14%;
+}
+
+#slide3 #overlay{
+    position: absolute;
+    top: 73.5%;
+    left: 0;
+    width: 100%;
+    height: 24%;
+    z-index: 10;
+    color: #FFF;
+    /*background-color: #888A74;*/
+    background-color: #000;
+    opacity: 0;
+    border-radius: 5px 5px 0 0;
+
+    -webkit-transition: opacity .4s; /* For Safari 3.1 to 6.0 */
+    transition: opacity .5s;
+}
+
+#slide3 .player:hover #overlay{
+    opacity: 100;
+}
+
+#leftDetails{
+    float: left;
+    padding: 3px;
+}
+#name{
+/*    color: #c80124;*/
+    font-size: 1.2em;
+}
+
+#year{
+    float: left;
+    font-style: italic;
+}
+
+#rightDetails{
+    float: right;
+    margin-top: 7px;
+    margin-right: 4px;
+}
+
+#number{
+    color: #c80124;
+    font-size: 2.2em;
+    font-family: 'UnitedSansCdHv'; 
+
+}
+
+#slide3{
+    text-align: center;
+    /*background-color: #5E5E5E;*/
+    color: black;
+    /*padding-left: 5em;*/
+    /*padding-right: 5em;*/
+}
+
+
+#schedule{
+    width: 60%;
+    margin-top: 1.5em;
+    text-align: center;
+    margin-left: auto; 
+    margin-right:auto;
+}
+
+.game{
+    display: inline-block;
+    width: 100%;
+    background-color: #e0e4eb;
+    height: 2em;
+    padding: 9px 0 0 0;
+    margin-bottom: 2px;
+
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: border-radius 0.2s, transform 0.3s;
+    transition: border-radius 0.2s, transform 0.3s;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.game:hover, .game:focus, .game:active {
+    -webkit-transform: scale(1.015);
+    transform: scale(1.015);
+    border-radius: .3em;
+}
+
+.details{
+    display: block;
+    width: 30%;
+    float: left;
+    margin-top: -3px;
+    /*height: 100%*/
+    text-align: left;
+    padding-left: 40px;
+}
+
+.date{
+    width: 100%;
+    display: inline-block;
+    font-weight: bold;
+    color: #c80124;
+}
+.rink{
+    widows: 100%;
+    display: inline-block;
+    font-style: italic;
+    font-size:15px;
+}
+
+.homeTeam{
+    width: 40%;
+    /* height: 100%; */
+    margin-left: 28%;
+    display: block;
+    position: absolute;
+}  
+
+.teamName{
+    width: 60%;
+    display: flex;
+    margin-top: 1px;
+    font-size: 1.6em;
+    font-family: 'UnitedSansCdHv';
+}
+
+.teamLogo{
+    width: 52px;
+    float: left;
+    margin-top: -2.5px;
+}
+
+.teamLogo img{
+    width: 30px;
+    height: 30px;
+}
+
+.time{
+    width: 10%;
+    margin-left: 55%;
+    margin-top: 1px;
+    position: absolute;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #c80124;
+}
+
+.awayTeam{
+width: 40%;
+/* height: 100%; */
+float: right;
+margin-right: -9.5%;
+display: block;
+/* position: absolute; */
+}
+
+
+ #contactHeader{
+    font-size: 1.7em;
+    text-align: center;
+}
+
+#contactCopy{
+    width: 48%;
+    padding: 1em;
+    margin:auto;
+    text-align: justify;
+}
+
+.contactText{
+    font-size: 1.4em;
+    display: block;
+    width: 36%;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 2.5em 5.5em 0.5em 5.5em;
+}
+
+#contactForm{
+    width: 35%;
+    /*padding:1em;*/
+    font-size: 1.2em;
+    margin-left: 6%;
+    margin-top: 2%;
+    padding-right: 8%;
+    padding-top: 2%;
+    border-right: 2px dashed black;
+}
+
+#formWrapper{]widt
+    border-right: 5px dashed black;
+}
+
+#contactForm #name{
+    width: 45%;
+    font-size: 1em;
+    display: block;
+    float: left;
+    padding:3px;
+
+}
+
+#contactForm #email{
+    width: 45%;
+    display: block;
+    font-size: 1em;
+    float: right;
+    padding:3px;
+}
+
+#contactForm #message{
+    margin-top: 3%;
+    width: 100%;
+    font-size: 1em;
+    padding:4px;
+
+}
+
+#contactForm #sendButton{
+    float: right;
+}
+
+#contactForm #puck{
+    margin:auto;
+}
+
+#contactForm input, textarea{
+    border-radius: 5px;
+}
+
+input, textarea, select {
+
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For all Gecko based browsers */
+          box-sizing: border-box;
+}
+
+/*#left{
+    float: left;
+}
+
+#right{
+    float: right;
+}*/
